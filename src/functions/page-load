@@ -1,0 +1,11 @@
+const pageLoad = function () {
+    const contentDiv = document.querySelector(".content");
+    const newDiv = document.createElement("div");
+    newDiv.classList.add("test");
+    newDiv.style.backgroundColor = "red";
+    contentDiv.appendChild(newDiv);
+    
+}
+
+pageLoad();
+export { pageLoad as default}
