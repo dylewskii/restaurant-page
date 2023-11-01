@@ -3,71 +3,123 @@ const pageLoad = function () {
 
     // ---- Main Structure ----
     const headerDiv = document.createElement("div");
+    headerDiv.classList.add("header");
     contentDiv.appendChild(headerDiv);
 
-    const bodyCard1 = document.createElement("div");
-    contentDiv.appendChild(bodyCard1)
-    const bodyCard2 = document.createElement("div");
-    contentDiv.appendChild(bodyCard2)
-    const bodyCard3 = document.createElement("div");
-    contentDiv.appendChild(bodyCard3)
+    const bodyCardOne = document.createElement("div");
+    bodyCardOne.classList.add("body-card", "card__one");
+    contentDiv.appendChild(bodyCardOne)
+
+    const bodyCardTwo = document.createElement("div");
+    bodyCardTwo.classList.add("body-card", "card__two");
+    contentDiv.appendChild(bodyCardTwo)
+
+    const bodyCardThree = document.createElement("div");
+    bodyCardThree.classList.add("body-card", "card__three");
+    contentDiv.appendChild(bodyCardThree)
+
+    const bodyCardFour = document.createElement("div");
+    bodyCardFour.classList.add("body-card", "card__four");
+    contentDiv.appendChild(bodyCardFour)
 
     const footerDiv = document.createElement("div");
+    footerDiv.classList.add("footer");
     contentDiv.appendChild(footerDiv);
 
     // ---- Element Content & Properties ----
-    // header
-    headerDiv.classList.add("header");
 
-    // header__left
-    const headerLeft = document.createElement("div");
-    headerLeft.classList.add("header__left");
-    headerDiv.appendChild(headerLeft);
+    // -- Header -- 
+    // top
+    const headerTop = document.createElement("div");
+    headerTop.classList.add("header__top");
+    headerDiv.appendChild(headerTop);
 
     const headerLeftH1 = document.createElement("h1");
-    headerLeftH1.innerText = "Restaurant";
-    headerLeft.appendChild(headerLeftH1);
+    headerLeftH1.innerText = "Italian";
+    headerTop.appendChild(headerLeftH1);
 
-    // header__right
-    const headerRight = document.createElement("div");
-    headerRight.classList.add("header__right");
-    headerDiv.appendChild(headerRight);
-
-    // header__bottom
+    // bottom
     const headerBottom = document.createElement("div");
+    headerBottom.classList.add("header__bottom");
+    headerDiv.appendChild(headerBottom);
+
+    const headerBottomP = document.createElement("p");
+    headerBottomP.textContent = "A superlative culinary offering in the heart of Wakanda. "
+    headerBottom.appendChild(headerBottomP);
+
+    // -- Body -- 
+    // 1
+    const cardOneH3 = document.createElement("h3");
+    cardOneH3.textContent = "Reservations";
+    bodyCardOne.appendChild(cardOneH3);
+
+    const cardOneP = document.createElement("p");
+    cardOneP.textContent = "Click below to make a restaurant reservation.";
+    bodyCardOne.appendChild(cardOneP);
+
+    const cardOneBtn = document.createElement("button");
+    cardOneBtn.classList.add("cardBtn");
+    cardOneBtn.textContent = "Reserve";
+    bodyCardOne.appendChild(cardOneBtn);
+    
+    // 2
+    const cardTwoH3 = document.createElement("h3");
+    cardTwoH3.textContent = "Lounge";
+    bodyCardTwo.appendChild(cardTwoH3);
+
+    const cardTwoP = document.createElement("p");
+    cardTwoP.textContent = "A visit to the Lounge Bar is a must for those seeking a memorable experience; wide-ranging cocktail menu, top-tier DJs and more. ";
+    bodyCardTwo.appendChild(cardTwoP);
+
+    const cardTwoBtn = document.createElement("button");
+    cardTwoBtn.classList.add("cardBtn");
+    bodyCardTwo.appendChild(cardTwoBtn);
+    cardTwoBtn.textContent = "Lounge";
+
+    // 3
+    const cardThreeH3 = document.createElement("h3");
+    cardThreeH3.textContent = "À la carte";
+    bodyCardThree.appendChild(cardThreeH3);
+
+    const cardThreeBtn = document.createElement("button");
+    cardThreeBtn.classList.add("cardBtn");
+    bodyCardThree.appendChild(cardThreeBtn);
+    cardThreeBtn.textContent = "View à la carte";
+
+    // 4
+    const cardFourH3 = document.createElement("h3");
+    cardFourH3.textContent = "Follow us";
+    bodyCardFour.appendChild(cardFourH3);
+
+    const cardFourP = document.createElement("p");
+    cardFourP.textContent = "@WakandaFood";
+    bodyCardFour.appendChild(cardFourP);
 
 
-    // const navElements = ['Home', 'Menu', 'Contact'];
-    // const headerRightUl = document.createElement("ul");
-    // headerRight.appendChild(headerRightUl);
-
-    // for (let i = 0; i < navElements.length; i++) {
-    //     const li = document.createElement('li');
-        
-    //     li.innerHTML = navElements[i];
-
-    //     headerRightUl.appendChild(li);
-    // }
-
-    // Body
-    bodyCard1.classList.add("body-card", "card__one");
-    const bodyCard1Btn = document.createElement("button");
-
-    bodyCard2.classList.add("body-card", "card__two");
-    bodyCard2.innerText = "Reserve";
-
-    bodyCard3.classList.add("body-card", "card__three");
-    bodyCard3.innerText = "Lounge";
-
-    // Footer
-    footerDiv.classList.add("footer");
-
+    // -- Footer --
+    // left
     const footerLeft = document.createElement("div");
-    const footerRight = document.createElement("div");
     footerLeft.classList.add("footer__left");
-    footerRight.classList.add("footer__right");
     footerDiv.appendChild(footerLeft);
+    const footerLeftH3 = document.createElement("H3");
+    footerLeft.appendChild(footerLeftH3);
+    footerLeftH3.textContent = "Contact";
+
+    // right
+    const footerRight = document.createElement("div");
+    footerRight.classList.add("footer__right");
     footerDiv.appendChild(footerRight);
+    const footerRightH3 = document.createElement("H3");
+    footerRight.appendChild(footerRightH3);
+    footerRightH3.textContent = "Dress Code";
+
+    // bottom
+    const footerBottom = document.createElement("div");
+    footerBottom.classList.add("footer__bottom");
+    footerDiv.appendChild(footerBottom);
+    const footerBottomP = document.createElement("p");
+    footerBottom.appendChild(footerBottomP);
+    footerBottomP.textContent = "© 2023 |  |  All Rights Reserved  | Site by Dylewskii";
 }
 
-export { pageLoad as default}
+export default pageLoad;

@@ -3,22 +3,84 @@
 .header {
     background-color: rgb(71, 71, 71);
     color: white;
-    height: 100px;
+    height: 300px;
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
+}
+
+.header__top {
+    padding: 0 0 0 30px;
+}
+
+.header__bottom {
+    padding: 0 0 0 40px;
 }
 
 /* Body Cards */
 
 .body-card {
+    background-color: black;
     color: white;
-    background-color: rgb(230, 174, 174);
     height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-bottom: 1px solid white;
+    padding: 0 40px 0 40px;
+}
+
+.cardBtn {
+    background-color: #B5A080;
+    color: white;
+    border: none;
+    width: 140px;
+    height: 40px;
+    transition: background-color 1s;
+}
+
+.cardBtn:hover {
+    background-color: white;
+    color: #B5A080;
+    cursor: pointer;
+    box-shadow: inset 0 -40px 0 -1px white;
+}
+
+.body-card > h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.card__one > p {
+    font-size: 0.8rem;
+    margin-bottom: 30px;
+}
+
+.card__two > p {
+    font-size: 0.6rem;
+    margin-bottom: 30px;
+}
+
+.card__three {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.card__four {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card__four > h3 {
+    margin-bottom: 0;
+}
+
+.card__four > p {
+    margin-bottom: 0;
+    font-size: 0.6rem;
 }
 
 /* Footer */
@@ -26,5 +88,47 @@
     background-color: rgb(71, 71, 71);
     color: white;
     height: 200px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 75% 25%;
+}
+
+.footer__left,
+.footer__right {
+    background-color: black;
+    height: 100%;
+    width: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footer__left > h3, 
+.footer__right > h3 {
+    text-decoration: red underline;
+    margin-left: 20px;
+}
+
+.footer__left {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.footer__right {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.footer__bottom {
+    grid-row: 2;
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__bottom > p {
+    font-size: 0.5rem;
+    
 }
