@@ -1,0 +1,30 @@
+/* Header */
+
+.header {
+    background-color: rgb(71, 71, 71);
+    color: white;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Body Cards */
+
+.body-card {
+    color: white;
+    background-color: rgb(230, 174, 174);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer */
+.footer {
+    background-color: rgb(71, 71, 71);
+    color: white;
+    height: 200px;
+    display: flex;
+}
