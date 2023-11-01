@@ -35,7 +35,7 @@ const pageLoad = function () {
     headerDiv.appendChild(headerTop);
 
     const headerLeftH1 = document.createElement("h1");
-    headerLeftH1.innerText = "Italian";
+    headerLeftH1.innerText = "Wakandine";
     headerTop.appendChild(headerLeftH1);
 
     // bottom
@@ -73,8 +73,8 @@ const pageLoad = function () {
 
     const cardTwoBtn = document.createElement("button");
     cardTwoBtn.classList.add("cardBtn");
-    bodyCardTwo.appendChild(cardTwoBtn);
     cardTwoBtn.textContent = "Lounge";
+    bodyCardTwo.appendChild(cardTwoBtn);
 
     // 3
     const cardThreeH3 = document.createElement("h3");
@@ -83,43 +83,78 @@ const pageLoad = function () {
 
     const cardThreeBtn = document.createElement("button");
     cardThreeBtn.classList.add("cardBtn");
-    bodyCardThree.appendChild(cardThreeBtn);
     cardThreeBtn.textContent = "View à la carte";
+    bodyCardThree.appendChild(cardThreeBtn);
 
     // 4
+    // top
+    const cardFourTop = document.createElement("div");
+    cardFourTop.classList.add("card__four__top");
+    bodyCardFour.appendChild(cardFourTop);
+
     const cardFourH3 = document.createElement("h3");
     cardFourH3.textContent = "Follow us";
-    bodyCardFour.appendChild(cardFourH3);
+    cardFourTop.appendChild(cardFourH3);
 
     const cardFourP = document.createElement("p");
     cardFourP.textContent = "@WakandaFood";
-    bodyCardFour.appendChild(cardFourP);
+    cardFourTop.appendChild(cardFourP);
+    
+    // bottom
+    const cardFourBottom = document.createElement("div");
+    cardFourBottom.classList.add("card__four__bottom");
+    bodyCardFour.appendChild(cardFourBottom);
 
+    for (let i = 0; i < 6; i++){
+        const imgDiv = document.createElement("div");
+        imgDiv.classList.add(`img-div`, `img-div${i+1}`);
+        imgDiv.textContent = "image";
+        cardFourBottom.appendChild(imgDiv);
+    }
 
     // -- Footer --
-    // left
-    const footerLeft = document.createElement("div");
-    footerLeft.classList.add("footer__left");
-    footerDiv.appendChild(footerLeft);
-    const footerLeftH3 = document.createElement("H3");
-    footerLeft.appendChild(footerLeftH3);
-    footerLeftH3.textContent = "Contact";
+    // top
+    const footerTop = document.createElement("div");
+    footerTop.classList.add("footer__top");
+    footerDiv.appendChild(footerTop);
 
-    // right
-    const footerRight = document.createElement("div");
-    footerRight.classList.add("footer__right");
-    footerDiv.appendChild(footerRight);
-    const footerRightH3 = document.createElement("H3");
-    footerRight.appendChild(footerRightH3);
-    footerRightH3.textContent = "Dress Code";
+    const footerTopH3 = document.createElement("H3");
+    footerTopH3.textContent = "Contact";
+    footerTop.appendChild(footerTopH3);
+
+    const footerTopP1 = document.createElement("p");
+    footerTopP1.textContent = "+44 791 234 567";
+    footerTop.appendChild(footerTopP1);
+
+    const footerTopP2 = document.createElement("p");
+    footerTopP2.textContent = "ORDER@WAKANDAFOOD.COM";
+    footerTop.appendChild(footerTopP2);
+
+    const footerTopP3 = document.createElement("p");
+    footerTopP3.textContent = "123A WAKANDA STREET, LONDON, W1 KND";
+    footerTop.appendChild(footerTopP3);
 
     // bottom
     const footerBottom = document.createElement("div");
     footerBottom.classList.add("footer__bottom");
     footerDiv.appendChild(footerBottom);
-    const footerBottomP = document.createElement("p");
-    footerBottom.appendChild(footerBottomP);
-    footerBottomP.textContent = "© 2023 |  |  All Rights Reserved  | Site by Dylewskii";
-}
+
+    const footerBottomH3 = document.createElement("H3");
+    footerBottomH3.textContent = "Dress Code";
+    footerBottom.appendChild(footerBottomH3);
+
+    const footerBottomP1 = document.createElement("p");
+    footerBottomP1.textContent = "The dress code is smart and elegant.";
+    footerBottom.appendChild(footerBottomP1);
+
+    // copyright
+    const footerCopyright = document.createElement("div");
+    footerCopyright.classList.add("footer__copyright");
+    footerDiv.appendChild(footerCopyright);
+
+    const footerCopyrightP = document.createElement("p");
+    footerCopyrightP.textContent = "© 2023 |  All Rights Reserved  | Site by Dylewskii";
+    footerCopyright.appendChild(footerCopyrightP);
+};
 
 export default pageLoad;

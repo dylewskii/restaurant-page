@@ -9,12 +9,13 @@
     flex-direction: column;
 }
 
-.header__top {
+.header__top, 
+.header__bottom {
     padding: 0 0 0 30px;
 }
 
 .header__bottom {
-    padding: 0 0 0 40px;
+    width: 80%;
 }
 
 /* Body Cards */
@@ -70,65 +71,88 @@
 
 .card__four {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    padding: 20px 20px 40px 20px;
 }
 
 .card__four > h3 {
-    margin-bottom: 0;
+    margin: 0;
 }
 
-.card__four > p {
-    margin-bottom: 0;
+.card__four__top > p {
+    margin-bottom: 30px;
     font-size: 0.6rem;
+}
+
+.card__four__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.card__four__bottom {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.img-div {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    margin: 0 auto;
 }
 
 /* Footer */
 .footer {
     background-color: rgb(71, 71, 71);
     color: white;
-    height: 200px;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 75% 25%;
+    min-height: 350px;
+    grid-template-rows: 40% 40% 20%;
+    flex-direction: column;
 }
 
-.footer__left,
-.footer__right {
-    background-color: black;
-    height: 100%;
-    width: 100%;
+.footer__top > h3, 
+.footer__bottom > h3 {
+    margin: 20px 0 10px 0;
+    border-bottom: 1px solid red;
+}
+
+.footer__top, 
+.footer__bottom {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
 }
 
-.footer__left > h3, 
-.footer__right > h3 {
-    text-decoration: red underline;
-    margin-left: 20px;
-}
-
-.footer__left {
+.footer__top {
     grid-row: 1;
-    grid-column: 1;
-}
-
-.footer__right {
-    grid-row: 1;
-    grid-column: 2;
+    padding: 0 40px 0 40px;
 }
 
 .footer__bottom {
     grid-row: 2;
-    grid-column: span 2;
+    padding: 0 40px 0 40px;
+    margin-top: 15px;
+}
+
+.footer__top > p, 
+.footer__bottom > p {
+    margin: 10px 0 10px 0;
+    font-size: 0.7rem
+}
+
+.footer__copyright {
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.footer__bottom > p {
-    font-size: 0.5rem;
-    
+    grid-row: 3;
+    font-size: 0.7rem
 }
