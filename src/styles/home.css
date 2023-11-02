@@ -25,13 +25,17 @@ p, a, button {
 /* Header */
 
 .header {
-    font-family: "Header-Main";
     background-color: rgb(71, 71, 71);
     color: white;
     height: 300px;
     width: 100%;
     display: flex;
     flex-direction: column;
+}
+
+.header__top {
+    font-family: "Header-Main";
+    font-size: 2rem;
 }
 
 .header__top, 
@@ -41,6 +45,10 @@ p, a, button {
 
 .header__bottom {
     width: 80%;
+}
+
+.header__bottom > p {
+    margin: 0;
 }
 
 /* Body Cards */
@@ -74,8 +82,8 @@ p, a, button {
 }
 
 .body-card > h3 {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
 .card__one > p {
