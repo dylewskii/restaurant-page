@@ -63,7 +63,7 @@ const pageLoad = function () {
     bodyCardOne.appendChild(cardOneP);
 
     const cardOneBtn = document.createElement("button");
-    cardOneBtn.classList.add("cardBtn");
+    cardOneBtn.classList.add("cardBtn", "reserveBtn");
     cardOneBtn.textContent = "Reserve";
     bodyCardOne.appendChild(cardOneBtn);
     
@@ -77,7 +77,7 @@ const pageLoad = function () {
     bodyCardTwo.appendChild(cardTwoP);
 
     const cardTwoBtn = document.createElement("button");
-    cardTwoBtn.classList.add("cardBtn");
+    cardTwoBtn.classList.add("cardBtn", "loungeBtn");
     cardTwoBtn.textContent = "Lounge";
     bodyCardTwo.appendChild(cardTwoBtn);
 
@@ -87,7 +87,7 @@ const pageLoad = function () {
     bodyCardThree.appendChild(cardThreeH3);
 
     const cardThreeBtn = document.createElement("button");
-    cardThreeBtn.classList.add("cardBtn");
+    cardThreeBtn.classList.add("cardBtn", "menuBtn");
     cardThreeBtn.textContent = "View à la carte";
     bodyCardThree.appendChild(cardThreeBtn);
 

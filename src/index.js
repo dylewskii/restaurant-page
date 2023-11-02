@@ -1,10 +1,47 @@
-// Entry
+// --- Entry ---
 import 'normalize.css';
-
 import './styles/home.css';
 import './styles/menu.css';
 import './styles/contact.css';
 
-import pageLoad from './functions/page-load';
+// --- Functions ---
+import headerLoad from './functions/header-load';
+import footerLoad from './functions/footer-load';
+import clearScreen from './functions/clear-screen';
 
-pageLoad()
+// --- Pages ---
+import homePage from './pages/home-page';
+import reservationsPage from './pages/reservations-page';
+// lounge page
+// menu page
+
+
+// ---- Main ----
+// pageLoad();
+headerLoad();
+homePage();
+footerLoad();
+
+const reserveBtn = document.querySelector(".reserveBtn");
+reserveBtn.addEventListener("click", () => {
+    clearScreen();
+    headerLoad();
+    reservationsPage();
+    footerLoad();
+});
+
+// const loungeBtn = document.querySelector(".loungeBtn");
+// loungeBtn.addEventListener("click", () => {
+//     clearScreen();
+//     headerLoad();
+//     loungePage();
+//     footerLoad();
+// });
+
+// const menuBtn = document.querySelector(".menuBtn");
+// menuBtn.addEventListener("click", () => {
+//     clearScreen();
+//     headerLoad();
+//     menuPage();
+//     footerLoad();
+// });
