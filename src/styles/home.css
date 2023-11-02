@@ -1,13 +1,31 @@
 /* Fonts */
 @font-face {
-    font-family: "Header-Main-Font";
+    font-family: "Header-Main";
     src: url(/src/assets/fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Secondary-Light" ;
+    src: url(/src/assets/fonts/Lato-Light.ttf);
+}
+
+@font-face {
+    font-family: "Secondary-Regular";
+    src: url(/src/assets/fonts/Lato-Regular.ttf);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Header-Main";
+}
+
+p, a, button {
+    font-family: "Secondary-Light";
 }
 
 /* Header */
 
 .header {
-    font-family: "Header-Main-Font";
+    font-family: "Header-Main";
     background-color: rgb(71, 71, 71);
     color: white;
     height: 300px;
