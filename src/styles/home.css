@@ -1,6 +1,13 @@
+/* Fonts */
+@font-face {
+    font-family: "Header-Main-Font";
+    src: url(/src/assets/fonts/BebasNeue-Regular.ttf);
+}
+
 /* Header */
 
 .header {
+    font-family: "Header-Main-Font";
     background-color: rgb(71, 71, 71);
     color: white;
     height: 300px;
