@@ -36,11 +36,37 @@ p, a, button {
 .header__top {
     font-family: "Header-Main";
     font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.toggle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-image: url("/src/assets/images/menu.png");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+}
+
+.toggle.active {
+    background-image: url("/src/assets/images/close.png");
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
 }
 
 .header__top, 
 .header__bottom {
-    padding: 0 0 0 30px;
+    padding: 0 35px 0 35px;
 }
 
 .header__bottom {

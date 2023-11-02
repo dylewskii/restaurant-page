@@ -34,9 +34,14 @@ const pageLoad = function () {
     headerTop.classList.add("header__top");
     headerDiv.appendChild(headerTop);
 
-    const headerLeftH1 = document.createElement("h1");
-    headerLeftH1.innerText = "Wakandine";
-    headerTop.appendChild(headerLeftH1);
+    const headerTopH1 = document.createElement("h1");
+    headerTopH1.innerText = "Wakandine";
+    headerTopH1.classList.add("logo");
+    headerTop.appendChild(headerTopH1);
+
+    const headerTopToggle = document.createElement("div");
+    headerTopToggle.classList.add("toggle");
+    headerTop.appendChild(headerTopToggle);
 
     // bottom
     const headerBottom = document.createElement("div");
