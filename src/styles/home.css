@@ -215,3 +215,11 @@ p, a, button {
     grid-row: 3;
     font-size: 0.7rem
 }
+
+#calendar {
+    margin: 5px 5px;
+}
+
+.confirmation-message {
+    color: rgb(241, 108, 108);
+}
