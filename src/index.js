@@ -13,7 +13,7 @@ import clearScreen from './functions/clear-screen';
 import homePage from './pages/home-page';
 import reservationsPage from './pages/reservations-page';
 import loungePage from './pages/lounge';
-// menu page
+import menuPage from './pages/menu-page';
 
 
 // ---- Main ----
@@ -38,10 +38,10 @@ loungeBtn.addEventListener("click", () => {
     footerLoad();
 });
 
-// const menuBtn = document.querySelector(".menuBtn");
-// menuBtn.addEventListener("click", () => {
-//     clearScreen();
-//     headerLoad();
-//     menuPage();
-//     footerLoad();
-// });
+const menuBtn = document.querySelector(".menuBtn");
+menuBtn.addEventListener("click", () => {
+    clearScreen();
+    headerLoad();
+    menuPage();
+    footerLoad();
+});

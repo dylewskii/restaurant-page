@@ -16,6 +16,11 @@
     src: url(/src/assets/fonts/Lato-Regular.ttf);
 }
 
+@font-face {
+    font-family: "Menu-Main";
+    src: url(/src/assets/fonts/MonsieurLaDoulaise-Regular.ttf);
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "Header-Main";
 }
@@ -291,3 +296,35 @@ p, a, button {
 }
 
 /* --- Menu Page --- */
+#menu-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-header {
+    font-family: "Menu-Main";
+    font-size: 3rem;
+}
+
+#menu-card-two {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    padding-top: 5rem;
+    padding-bottom: 40rem;
+    row-gap: 20px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.menu-item-header {
+    font-size: 1.2rem;
+    justify-self: center;
+}
+
+.menu-item-desc {
+    font-size: 0.6rem;
+    justify-self: flex-start;
+}
