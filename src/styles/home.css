@@ -1,3 +1,5 @@
+/* --- Home Page --- */
+
 /* Fonts */
 @font-face {
     font-family: "Header-Main";
@@ -216,6 +218,8 @@ p, a, button {
     font-size: 0.7rem
 }
 
+/* --- Reservations Page --- */
+
 #calendar {
     margin: 5px 5px;
 }
@@ -223,3 +227,67 @@ p, a, button {
 .confirmation-message {
     color: rgb(241, 108, 108);
 }
+
+/* --- Lounge Page --- */
+#lounge-card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 30px;
+    background-image: url("/src/assets/images/lounge.jpg");
+    background-size: 100%;
+    background-position: 20%;
+    background-repeat: no-repeat;
+}
+
+#lounge-card > h3 {
+    font-size: 1.8rem;
+}
+
+#lounge-card-two {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    gap: 20px;
+    overflow: hidden;
+}
+
+#lounge-card-two > h4 {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.dj-one {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.dj-two {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.dj-three {
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.dj-four {
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.dj-five {
+    grid-row: 4;
+    grid-column: 1;
+}
+
+.dj-six {
+    grid-row: 4;
+    grid-column: 2;
+}
+
+/* --- Menu Page --- */
