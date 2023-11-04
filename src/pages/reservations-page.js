@@ -30,7 +30,7 @@ const reservationsPage = function () {
                 done = true;
                 const bookingConfH2 = document.createElement("h2");
                 bookingConfH2.classList.add("confirmation-message");
-                bookingConfH2.textContent = `Thank you for choosing Wakandine. You will receive an email shortly!`;
+                bookingConfH2.textContent = `Thank you for choosing Wakandine. You will receive a booking confirmation shortly. 📧`;
                 bookingConfCard.appendChild(bookingConfH2);
             }
         }

@@ -1,3 +1,10 @@
+import clearScreen from "../functions/clear-screen";
+import headerLoad from "../functions/header-load";
+import reservationsPage from "./reservations-page";
+import loungePage from "./lounge-page";
+import menuPage from "./menu-page";
+import footerLoad from "../functions/footer-load";
+
 const homePage = function () {
     const contentDiv = document.querySelector(".content");
 
@@ -80,10 +87,34 @@ const homePage = function () {
 
     for (let i = 0; i < 6; i++){
         const imgDiv = document.createElement("div");
-        imgDiv.classList.add(`img-div`, `img-div${i+1}`);
-        imgDiv.textContent = "image";
+        imgDiv.classList.add(`img-div`);
+        imgDiv.setAttribute("id", `social-img${i+1}`);
         cardFourBottom.appendChild(imgDiv);
     }
+
+    const reserveBtn = document.querySelector(".reserveBtn");
+    reserveBtn.addEventListener("click", () => {
+        clearScreen();
+        headerLoad();
+        reservationsPage();
+        footerLoad();
+    });
+
+    const loungeBtn = document.querySelector(".loungeBtn");
+    loungeBtn.addEventListener("click", () => {
+        clearScreen();
+        headerLoad();
+        loungePage();
+        footerLoad();
+    });
+
+    const menuBtn = document.querySelector(".menuBtn");
+    menuBtn.addEventListener("click", () => {
+        clearScreen();
+        headerLoad();
+        menuPage();
+        footerLoad();
+    });
 };
 
 export default homePage;

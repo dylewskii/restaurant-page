@@ -139,7 +139,7 @@ p, a, button {
     display: flex;
     flex-direction: column;
     height: 300px;
-    padding: 20px 20px 40px 20px;
+    padding: 10rem 20px 10rem 20px;
 }
 
 .card__four > h3 {
@@ -167,11 +167,48 @@ p, a, button {
 }
 
 .img-div {
-    height: 50px;
-    width: 50px;
-    background-color: red;
+    height: 150px;
+    width: 150px;
+    background-color: #B5A080;
     margin: 0 auto;
 }
+
+#social-img1 {
+    background-image: url(/src/assets/images/img1.jpg);
+    background-size: 150%;
+    background-repeat: no-repeat;
+}
+
+#social-img2 {
+    background-image: url(/src/assets/images/img2.jpg);
+    background-size: 150%;
+    background-repeat: no-repeat;
+}
+
+#social-img3 {
+    background-image: url(/src/assets/images/img3.jpg);
+    background-size: 150%;
+    background-repeat: no-repeat;
+}
+
+#social-img4 {
+    background-image: url(/src/assets/images/img4.jpg);
+    background-size: 150%;
+    background-repeat: no-repeat;
+}
+
+#social-img5 {
+    background-image: url(/src/assets/images/img5.jpg);
+    background-size: 150%;
+    background-repeat: no-repeat;
+}
+
+#social-img6 {
+    background-image: url(/src/assets/images/img6.jpg);
+    background-size: 150%;
+    background-repeat: no-repeat;
+}
+
 
 /* Footer */
 .footer {
@@ -230,7 +267,8 @@ p, a, button {
 }
 
 .confirmation-message {
-    color: rgb(241, 108, 108);
+    color: rgb(141, 176, 108);
+    text-align: center;
 }
 
 /* --- Lounge Page --- */

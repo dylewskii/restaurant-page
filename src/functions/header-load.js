@@ -1,3 +1,7 @@
+import clearScreen from "./clear-screen";
+import homePage from "../pages/home-page";
+import footerLoad from "./footer-load";
+
 const headerLoad = function () {
     const contentDiv = document.querySelector(".content");
 
@@ -28,6 +32,14 @@ const headerLoad = function () {
     const headerBottomP = document.createElement("p");
     headerBottomP.textContent = "A superlative culinary offering in the heart of Wakanda. "
     headerBottom.appendChild(headerBottomP);
+
+    const logo = document.querySelector(".logo");
+    logo.addEventListener("click", () => {
+        clearScreen();
+        headerLoad();
+        homePage();
+        footerLoad();
+    });
 };
 
 export default headerLoad;
