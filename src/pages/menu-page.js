@@ -9,7 +9,7 @@ const menuPage = function () {
     
     const menuCardH3 = document.createElement("h3");
     menuCardH3.setAttribute("id", "menu-header");
-    menuCardH3.textContent = "À la carte";
+    menuCardH3.textContent = "À LA CARTE";
     menuCard.appendChild(menuCardH3);
 
     const menuCardTwo = document.createElement("div");

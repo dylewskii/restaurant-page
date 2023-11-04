@@ -107,7 +107,7 @@ p, a, button {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    border-bottom: 1px solid white;
+    /* border-bottom: 1px solid white; */
     padding: 0 40px 0 40px;
 }
 
@@ -313,7 +313,8 @@ p, a, button {
 /* --- Reservations Page --- */
 
 #calendar {
-    margin: 5px 5px;
+    margin: 0px 0px;
+    border-radius: 0;
 }
 
 .confirmation-message {
@@ -342,15 +343,25 @@ p, a, button {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     color: white;
-    padding-top: 5rem;
-    padding-bottom: 10rem;
+    padding-top: 2rem;
+    padding-bottom: 16rem;
     gap: 20px;
     overflow: hidden;
 }
 
 #lounge-card-two > h4 {
     grid-row: 1;
-    grid-column: 1;
+    grid-column: span 2;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.dj-div {
+    text-align: center;
+}
+
+.dj-name {
+    color: #B5A080;
 }
 
 .dj-one {
@@ -391,7 +402,7 @@ p, a, button {
 }
 
 #menu-header {
-    font-family: "Menu-Main";
+    font-family: "Subheader-Main";
     font-size: 3rem;
 }
 
@@ -400,8 +411,8 @@ p, a, button {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     color: white;
-    padding-top: 5rem;
-    padding-bottom: 40rem;
+    padding: 0 3rem 40rem 3rem;
+    /* padding-bottom: 40rem; */
     row-gap: 20px;
     overflow: hidden;
     align-items: center;
@@ -409,12 +420,11 @@ p, a, button {
 
 .menu-item-header {
     font-size: 1.2rem;
-    justify-self: center;
+    text-align: center;
 }
 
 .menu-item-desc {
     font-size: 0.6rem;
-    justify-self: flex-start;
 }
 
 /* --- MEDIA QUERIES --- */
@@ -462,5 +472,9 @@ p, a, button {
 
     .footer__copyright {
         grid-row: 4;
+    }
+
+    .menu-item-desc {
+        font-size: 0.5rem;
     }
 }
