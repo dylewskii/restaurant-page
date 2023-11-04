@@ -1,7 +1,7 @@
 # restaurant-page
 
 Live - 👉 
-## Project Goals:
+## Focus Points:
 - Practice DOM manipulation by dynamically rendering a restaurant homepage with multiple tabs.
 - Get accustomed to Webpack.
 
