@@ -30,7 +30,7 @@ const homePage = function () {
     // -- Body -- 
     // 1
     const cardOneH3 = document.createElement("h3");
-    cardOneH3.textContent = "Reservations";
+    cardOneH3.textContent = "RESERVATIONS";
     bodyCardOne.appendChild(cardOneH3);
 
     const cardOneP = document.createElement("p");
@@ -44,7 +44,7 @@ const homePage = function () {
     
     // 2
     const cardTwoH3 = document.createElement("h3");
-    cardTwoH3.textContent = "Lounge";
+    cardTwoH3.textContent = "LOUNGE";
     bodyCardTwo.appendChild(cardTwoH3);
 
     const cardTwoP = document.createElement("p");
@@ -58,12 +58,12 @@ const homePage = function () {
 
     // 3
     const cardThreeH3 = document.createElement("h3");
-    cardThreeH3.textContent = "À la carte";
+    cardThreeH3.textContent = "À LA CARTE";
     bodyCardThree.appendChild(cardThreeH3);
 
     const cardThreeBtn = document.createElement("button");
     cardThreeBtn.classList.add("cardBtn", "menuBtn");
-    cardThreeBtn.textContent = "View à la carte";
+    cardThreeBtn.textContent = "View Menu";
     bodyCardThree.appendChild(cardThreeBtn);
 
     // 4
@@ -73,7 +73,7 @@ const homePage = function () {
     bodyCardFour.appendChild(cardFourTop);
 
     const cardFourH3 = document.createElement("h3");
-    cardFourH3.textContent = "Follow us";
+    cardFourH3.textContent = "FOLLOW US";
     cardFourTop.appendChild(cardFourH3);
 
     const cardFourP = document.createElement("p");
