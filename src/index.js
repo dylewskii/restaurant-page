@@ -1,8 +1,6 @@
 // // --- CSS ---
 import 'normalize.css';
-import './styles/home.css';
-import './styles/menu.css';
-import './styles/contact.css';
+import './styles/styles.css';
 
 // --- Functions ---
 import headerLoad from './functions/header-load';
