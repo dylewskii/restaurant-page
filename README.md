@@ -1,6 +1,6 @@
 # restaurant-page
 
-Live - 👉 
+Live 👉 
 ## Focus Points:
 - Practice DOM manipulation by dynamically rendering a restaurant homepage with multiple tabs.
 - Get accustomed to Webpack.
