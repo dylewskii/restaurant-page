@@ -7,13 +7,8 @@
 }
 
 @font-face {
-    font-family: "Body-Light" ;
+    font-family: "Body-Main" ;
     src: url(/src/assets/fonts/Lato-Light.ttf);
-}
-
-@font-face {
-    font-family: "Body-Regular";
-    src: url(/src/assets/fonts/Lato-Regular.ttf);
 }
 
 @font-face {
@@ -35,11 +30,11 @@ h2, h3, h4, h5, h6 {
 }
 
 p, a, button {
-    font-family: "Body-Light";
+    font-family: "Body-Main";
 }
 
 ::placeholder {
-    font-family: "Body-Light";
+    font-family: "Body-Main";
 }
 
 /* Header */
@@ -70,24 +65,6 @@ p, a, button {
     border-bottom: 2px solid red;
 }
 
-.toggle {
-    position: relative;
-    width: 60px;
-    height: 60px;
-    background-image: url("/src/assets/images/menu.png");
-    background-repeat: no-repeat;
-    background-size: 30px;
-    background-position: center;
-    cursor: pointer;
-}
-
-.toggle.active {
-    background-image: url("/src/assets/images/close.png");
-    background-repeat: no-repeat;
-    background-size: 25px;
-    background-position: center;
-}
-
 .header__top, 
 .header__bottom {
     padding: 0 35px 0 35px;
@@ -99,8 +76,8 @@ p, a, button {
 
 .header__bottom > p {
     margin: 0;
-    color: rgb(247, 116, 116);
-    font-size: 0.6rem;
+    color: rgb(255, 27, 27);
+    font-size: 1.5rem;
 }
 
 /* Body Cards */
@@ -139,12 +116,12 @@ p, a, button {
 }
 
 .card__one > p {
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin-bottom: 30px;
 }
 
 .card__two > p {
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin-bottom: 30px;
 }
 
@@ -167,7 +144,7 @@ p, a, button {
 
 .card__four__top > p {
     margin-bottom: 30px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     border-bottom: 1px solid white;
     margin-bottom: 4rem;
 }
@@ -427,6 +404,18 @@ p, a, button {
 
 /* --- MEDIA QUERIES --- */
 @media (max-width: 450px){
+    .header__bottom > p {
+        font-size: 1rem;
+    }
+
+    .card__one > p {
+        font-size: 0.8rem;
+    }
+    
+    .card__two > p {
+        font-size: 0.8rem;
+    }
+
     .footer {
         display: grid;
         grid-template-rows: 175px 125px 200px;
