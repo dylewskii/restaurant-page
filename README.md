@@ -1,18 +1,20 @@
 # restaurant-page
 
-Live 👉 
+Live 👉 https://dylewskii.github.io/restaurant-page/
+
 ## Focus Points:
 - Practice DOM manipulation by dynamically rendering a restaurant homepage with multiple tabs.
 - Get accustomed to Webpack.
+
+## Final Outcome:
+- ![project outcome](/src/assets/images/restaurant-page-final.png)
 
 ## Languages used:
 - ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)   
 - ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-
 ## Future TODO:
-- Add functionality to toggle/tray icon.
-- Allow users to place a reservation, subscribe to a newsletter and set up links on social images.
+- Allow users to place a reservation, subscribe to a newsletter and navigate using the social images.
 
 
 ## Credits:
