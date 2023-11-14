@@ -7,7 +7,7 @@ Live 👉 https://dylewskii.github.io/restaurant-page/
 - Get accustomed to Webpack.
 
 ## Final Outcome:
-- ![project outcome](/src/assets/images/restaurant-page-final.png)
+![project outcome](/src/assets/images/restaurant-page-final.png)
 
 ## Languages used:
 - ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)   
